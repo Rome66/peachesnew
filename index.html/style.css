@@ -1,0 +1,67 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #d46a6a;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#yesBtn {
+  background-color: #FF7900;
+  color: white;
+}
+
+#noBtn {
+  background-color: #eee;
+  color: black;
+  position: relative;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  background-color: #610C04;
+  color: red;
+}
+
+.hidden {
+  display: none;
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #e91e63;
+  animation: popIn 0.5s ease forwards;
+}
+
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

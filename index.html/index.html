@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My SATHANAM😌</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #herPhoto {
+      display: none;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 300px;
+    }
+    #revealBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #FF7900;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #revealBtn:hover {
+      background-color: #ff85c1;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <div class="container">
+    <h1>Hey Sathanamnehhh..</h1>
+    <p>Will you be my forever?😏</p>
+    <div class="buttons">
+      <button id="yesBtn">Yes, CHETTAH Ummahh!</button>
+      <button id="noBtn">No</button>
+    </div>
+    <div id="message" class="hidden">Yay!! I love you so much My cute little Princess 😚</div>
+
+    <!-- ❤️ Love Button -->
+    <button id="revealBtn" onclick="showPhoto()">My Pretty Girl😌</button>
+
+    <!-- 📸 Hidden Image -->
+    <img id="herPhoto" src="us.jpg" alt="My Sathanam 😍">
+
+    <button onclick="logout()" class="logout-btn">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function showPhoto() {
+      document.getElementById("herPhoto").style.display = "block";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Peach Login 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .login-container {
+      text-align: center;
+      background: fascia;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      width: 80%;
+      font-size: 1em;
+    }
+
+    .login-btn {
+      background-color: #FF7900;
+      color: red;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .error {
+      color: black;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-container">
+      <h2>Hey Peach 😗</h2>
+      <p>Ente Name Type Cheyyunnehh...!😌</p>
+      <input type="password" id="password" placeholder="Evide Enter Cheyyu Ponnehh...">
+      <br>
+      <button class="login-btn" onclick="checkPassword()">Login</button>
+      <div id="error" class="error"></div>
+    </div>
+  </div>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      const error = document.getElementById("error");
+
+      if (password === "Abhiram") {
+        localStorage.setItem("loggedIn", "true");
+        window.location.href = "index.html";
+      } else {
+        error.textContent = "Kezhanggachiee...!🙆🏻";
+      }
+    }
+  </script>
+</body>
+</html>
